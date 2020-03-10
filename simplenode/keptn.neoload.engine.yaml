@@ -7,7 +7,7 @@ steps:
     - path: /simpleservice/neoload/simpleservice.yaml
     constant_variables:
     - name: server_host
-      value: simplenode.simpleproject-staging.svc.cluster.local
+      value: simplenode.simpleproject-staging.1.2.3.4.xip.io
     - name: server_port
       value: 80
     description: Simpleload
