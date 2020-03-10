@@ -15,6 +15,7 @@ objectives:
           - "<=800"
   - sli: throughput
   - sli: additem_p95
+    weight: 2
     pass:        # pass if (relative change <= 10% AND absolute value is < 500)
       - criteria:
           - "<=+10%" # relative values require a prefixed sign (plus or minus)
@@ -23,13 +24,6 @@ objectives:
       - criteria:
           - "<=800"
   - sli: error_nl_rate
-    weight: 2
-    pass:
-      - criteria:
-          - "<=1"
-    warning:
-      - criteria:
-          - "<=2"
   - sli: controllerCPU
     pass:
       - criteria:
